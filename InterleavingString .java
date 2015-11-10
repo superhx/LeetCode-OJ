@@ -1,6 +1,4 @@
-package leetcode;
-
-public class Solution {
+class Solution {
     public boolean isInterleave(String s1, String s2, String s3) {
         int len1 = s1.length(), len2 = s2.length(), len3 = s3.length();
         if (len1 + len2 != len3) return false;
@@ -11,7 +9,7 @@ public class Solution {
             for (int i = 1; i <= len1; i++) {
                 // flag(s1[0:i-1],s2[0:j-1]) = (flag(s1[0:i - 1],s2[0:j-1]) && s1.charAt(i-1) == s3.charAt(i + j - 1)) ||
                 // (flag(s1[0:i-1],s2[0:j - 2]) && s2.charAt(j-1) == s3.charAt(i + j - 1))
-                flags[i] = (flags[i-1] && s1.charAt(i-1) == s3.charAt(i + j -1)) || (flags[i] && s2.charAt(j-1) == s3.charAt(i + j - 1));
+                flags[i] = (flags[i - 1] && s1.charAt(i - 1) == s3.charAt(i + j - 1)) || (flags[i] && s2.charAt(j - 1) == s3.charAt(i + j - 1));
             }
         }
         return flags[len1];

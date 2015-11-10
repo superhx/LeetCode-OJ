@@ -1,13 +1,7 @@
-package leetcode;
-
-
 import java.util.Collections;
 import java.util.List;
 
-public class Solution {
-    /*
-     * From bottom to top
-     */
+class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         Collections.reverse(triangle);
         // plus 2 for first line

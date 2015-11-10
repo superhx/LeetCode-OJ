@@ -1,6 +1,3 @@
-package leetcode;
-
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -15,7 +12,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> levels = new LinkedList<>();
         if (root == null) return levels;

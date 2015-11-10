@@ -1,6 +1,3 @@
-package leetcode;
-
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,7 +12,7 @@ class TreeNode {
 }
 
 
-public class Solution {
+class Solution {
 
     List<TreeNode>[][] nodesMatrix;
 

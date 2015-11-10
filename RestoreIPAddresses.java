@@ -1,9 +1,13 @@
-package leetcode;
-
 import java.util.LinkedList;
 import java.util.List;
 
-public class Solution {
+class Solution {
+    public static void main(String[] args) {
+        List<String> l = new Solution().restoreIpAddresses("010010");
+        //System.out.print("2333".substring(0, 4));
+        System.out.println(Integer.parseInt("010"));
+    }
+
     public List<String> restoreIpAddresses(String s) {
         return restore(s, 4);
     }
@@ -31,11 +35,5 @@ public class Solution {
         if (str.charAt(0) == '0' && len != 1) return false;
         if (Integer.parseInt(str) > 255) return false;
         return true;
-    }
-
-    public static void main(String[] args) {
-        List<String> l = new Solution().restoreIpAddresses("010010");
-        //System.out.print("2333".substring(0, 4));
-        System.out.println(Integer.parseInt("010"));
     }
 }

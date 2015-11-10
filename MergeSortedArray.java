@@ -1,6 +1,4 @@
-package leetcode;
-
-public class Solution {
+class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int cur1 = m - 1, cur2 = n - 1;
         int i;

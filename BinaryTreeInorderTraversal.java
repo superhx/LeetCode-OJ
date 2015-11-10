@@ -1,6 +1,3 @@
-package leetcode;
-
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,11 +12,10 @@ class TreeNode {
 }
 
 
-public class Solution {
-
+class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> traversal = new LinkedList<>();
-        inorderTraversal(root,traversal);
+        inorderTraversal(root, traversal);
         return traversal;
     }
 

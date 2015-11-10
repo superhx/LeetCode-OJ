@@ -1,6 +1,4 @@
-package leetcode;
-
-public class Solution {
+class Solution {
     public int numTrees(int n) {
         int[] nums = new int[n + 1];
         nums[0] = 1;
@@ -10,9 +8,5 @@ public class Solution {
             }
         }
         return nums[n];
-    }
-
-    public static void main(String[] args){
-        System.out.println(new Solution().numTrees(0));
     }
 }

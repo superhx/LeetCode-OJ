@@ -1,10 +1,8 @@
-package leetcode;
-
-
 import java.util.LinkedList;
 import java.util.List;
 
-public class Solution {
+
+class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> triangle = new LinkedList<List<Integer>>();
         int[] prevLine = new int[numRows];

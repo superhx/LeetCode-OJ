@@ -1,9 +1,4 @@
-package leetcode;
-
-/**
- * Created by Lancer on 2/15/15.
- */
-public class Solution {
+class Solution {
     public int maxProfit(int[] prices) {
         int len = prices.length;
         if (len < 2) return 0;
@@ -27,16 +22,16 @@ public class Solution {
             } else {
                 rightMax = right;
             }
-            rightMaxProfits[len-1-i]=rightMaxProfit;
+            rightMaxProfits[len - 1 - i] = rightMaxProfit;
         }
 
         int maxProfit = 0;
-        if(maxProfit<rightMaxProfits[0]) maxProfit=rightMaxProfits[0];
-        for(int i=1;i<len-1;i++){
-            int temp=leftMaxProfits[i]+rightMaxProfits[i+1];
-            if(maxProfit<temp) maxProfit=temp;
+        if (maxProfit < rightMaxProfits[0]) maxProfit = rightMaxProfits[0];
+        for (int i = 1; i < len - 1; i++) {
+            int temp = leftMaxProfits[i] + rightMaxProfits[i + 1];
+            if (maxProfit < temp) maxProfit = temp;
         }
-        if(maxProfit<leftMaxProfits[len-1]) maxProfit=leftMaxProfits[len-1];
+        if (maxProfit < leftMaxProfits[len - 1]) maxProfit = leftMaxProfits[len - 1];
 
         return maxProfit;
     }

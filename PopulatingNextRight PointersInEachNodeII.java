@@ -1,5 +1,3 @@
-package leetcode;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -12,7 +10,7 @@ class TreeLinkNode {
     }
 }
 
-public class Solution {
+class Solution {
     public void connect(TreeLinkNode root) {
         if (root == null) return;
         TreeLinkNode levelFirstNode = root, currentParent;

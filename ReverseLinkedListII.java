@@ -1,6 +1,3 @@
-package leetcode;
-
-
 import java.util.Stack;
 
 class ListNode {
@@ -12,7 +9,7 @@ class ListNode {
     }
 }
 
-public class Solution {
+class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         ListNode fakeHead = new ListNode(-1);
         fakeHead.next = head;

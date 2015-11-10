@@ -1,6 +1,4 @@
-package leetcode;
-
-public class Solution {
+class Solution {
     public int numDecodings(String s) {
         int len = s.length();
         if (len == 0 || s.charAt(0) == '0') return 0;
@@ -19,9 +17,5 @@ public class Solution {
         if (len == 0 || len > 2) return false;
         if (Integer.parseInt(s) > 26) return false;
         return true;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution().numDecodings("0"));
     }
 }

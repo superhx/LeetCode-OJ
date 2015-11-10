@@ -1,6 +1,4 @@
-package leetcode;
-
-public class Solution {
+class Solution {
 
     Boolean[][][] scramble;
 

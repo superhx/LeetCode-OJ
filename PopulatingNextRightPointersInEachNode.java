@@ -1,5 +1,3 @@
-package leetcode;
-
 class TreeLinkNode {
     int val;
     TreeLinkNode left, right, next;
@@ -9,7 +7,7 @@ class TreeLinkNode {
     }
 }
 
-public class Solution {
+class Solution {
     public void connect(TreeLinkNode root) {
         TreeLinkNode levelFirstNode = root, currentParent;
         while (levelFirstNode != null) {

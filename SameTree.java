@@ -1,6 +1,3 @@
-package leetcode;
-
-
 class TreeNode {
     int val;
     TreeNode left;
@@ -11,7 +8,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null ^ q == null) return false;
         if (p == null && q == null) return true;

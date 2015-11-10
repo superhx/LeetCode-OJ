@@ -1,10 +1,12 @@
-package leetcode;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeMap;
 
-public class Solution {
+class Solution {
+    public static void main(String[] args) {
+        System.out.println(new Solution().subsetsWithDup(new int[]{1, 2, 2}));
+    }
+
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         TreeMap<Integer, Integer> map = new TreeMap<>();
         for (int num : nums) map.put(num, map.containsKey(num) ? map.get(num) + 1 : 1);
@@ -30,10 +32,5 @@ public class Solution {
             }
         }
         return subsets;
-    }
-
-
-    public static void main(String[] args) {
-        System.out.println(new Solution().subsetsWithDup(new int[]{1, 2, 2}));
     }
 }

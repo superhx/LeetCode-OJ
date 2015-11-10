@@ -1,6 +1,3 @@
-package leetcode;
-
-
 class TreeNode {
     int val;
     TreeNode left;
@@ -11,7 +8,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+class Solution {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
         return isSymmetric(root.left, root.right);

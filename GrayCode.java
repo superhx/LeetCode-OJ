@@ -1,9 +1,7 @@
-package leetcode;
-
 import java.util.LinkedList;
 import java.util.List;
 
-public class Solution {
+class Solution {
     public List<Integer> grayCode(int n) {
         LinkedList<Integer> codes = new LinkedList<>();
         codes.add(0);
